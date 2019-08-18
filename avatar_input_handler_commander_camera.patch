@@ -1,0 +1,29 @@
+--- avatar_input_handler.xml	2019-08-18 22:21:40.026414400 +0300
++++ avatar_input_handler_commander_camera.xml	2019-08-17 21:22:42.508706700 +0300
+@@ -81,7 +81,7 @@
+       <sensitivity>0.0025</sensitivity>
+       <scrollSensitivity>	5	</scrollSensitivity>
+       <angleRange>10 110</angleRange>
+-      <distRange>2 25</distRange>
++      <distRange>2 125</distRange>
+       <fovMultMinDist>1.0</fovMultMinDist>
+       <fovMultMaxDist>1.0</fovMultMaxDist>
+       <transitionSettings>
+@@ -194,7 +194,7 @@
+       <sensitivity>0.0025</sensitivity>
+       <scrollSensitivity>	5	</scrollSensitivity>
+       <angleRange>10 110</angleRange>
+-      <distRange>2 25</distRange>
++      <distRange>2 125</distRange>
+       <minStartDist>0.0</minStartDist>
+       <optimalStartDist>	20	</optimalStartDist>
+       <fovMultMinDist>1.0</fovMultMinDist>
+@@ -259,7 +259,7 @@
+       <keySensitivity>0.5</keySensitivity>
+       <sensitivity>0.05</sensitivity>
+       <scrollSensitivity>0.25</scrollSensitivity>
+-      <distRange>40 100</distRange>
++      <distRange>40 150</distRange>
+       <dynamicDistRanges>
+         <dyanimcDistRange>
+           <minArenaSize>	2000	</minArenaSize>

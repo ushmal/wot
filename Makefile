@@ -2,8 +2,8 @@
 
 .PHONY: all clean install 
 
-wotdir = wot
-wotver = 0.9.19.0.1
+wotdir = /cygdrive/c/games/WOT
+wotver = 1.6.0.1
 wotmod = res_mods/$(wotver)/scripts/client/gui/mods
 
 all:
@@ -14,5 +14,5 @@ clean:
 
 install: all
 	mkdir -p "$(wotdir)/$(wotmod)"
-	cp -f mod_auto_equip.pyc mod_fast_repair.pyc mod_target.pyc "$(wotdir)/$(wotmod)"
+	cp -f *.pyc "$(wotdir)/$(wotmod)"
 
