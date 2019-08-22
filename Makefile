@@ -2,8 +2,8 @@
 
 .PHONY: all clean install 
 
-wotver = 1.6.0.1
-wotdir = /cygdrive/c/games/WOT
+wotver = 1.6.0.2
+wotdir = c:/games/WOT
 wotmod = res_mods/$(wotver)/scripts/client/gui/mods
 
 all:
