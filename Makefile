@@ -2,8 +2,8 @@
 
 .PHONY: all clean install 
 
-wotver = 1.6.0.3
 wotdir = c:/games/WOT
+wotver = $(shell ls $(wotdir)/res_mods/ | grep "^1\." | tail -n1)
 wotmod = res_mods/$(wotver)/scripts/client/gui/mods
 
 all:
