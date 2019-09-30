@@ -3,16 +3,28 @@
 .PHONY: all clean install 
 
 wotdir = c:/games/WOT
-wotver = $(shell ls $(wotdir)/res_mods/ | grep "^1\." | tail -n1)
-wotmod = res_mods/$(wotver)/scripts/client/gui/mods
+wotver = $(shell ls $(wotdir)/mods/ | grep "^1\." | tail -n1)
+moddir = res/scripts/client/gui/mods
+domain = com.github.ushmal
 
-all:
-	python -m compileall mod_*.py
+sources = $(wildcard *.py)
+targets = $(sources:.py=.pyc)
+wotmods = $(targets:mod_%.pyc=$(domain).%.wotmod)
+
+all: $(wotmods)
+
+%.pyc: %.py
+	python -m compileall $<
+
+$(domain).%.wotmod: mod_%.pyc
+	mkdir -p $(moddir)
+	cp $< $(moddir)
+	zip -0 -r -D -X $@ res
+	rm -rf res
 
 clean:
-	rm *.pyc
+	-rm $(wotmods)
 
 install: all
-	mkdir -p "$(wotdir)/$(wotmod)"
-	cp -f *.pyc "$(wotdir)/$(wotmod)"
+	cp -f $(wotmods) "$(wotdir)/mods/$(wotver)"
 

@@ -15,5 +15,3 @@ def hook_StrategicCamera_readCfg(self, dataSec):
 
 prev_StrategicCamera_readCfg = StrategicCamera._StrategicCamera__readCfg
 StrategicCamera._StrategicCamera__readCfg = hook_StrategicCamera_readCfg
-
-print 'Mod "%s" loaded' % __file__
