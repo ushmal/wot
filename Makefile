@@ -9,14 +9,14 @@ domain = com.github.ushmal
 
 sources = $(wildcard *.py)
 targets = $(sources:.py=.pyc)
-wotmods = $(targets:mod_%.pyc=$(domain).%.wotmod)
+wotmods = $(targets:mod_%.pyc=mods/$(domain).%.wotmod)
 
 all: $(wotmods)
 
 %.pyc: %.py
 	python -m compileall $<
 
-$(domain).%.wotmod: mod_%.pyc
+mods/$(domain).%.wotmod: mod_%.pyc
 	mkdir -p $(moddir)
 	cp $< $(moddir)
 	zip -0 -r -D -X $@ res
