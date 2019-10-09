@@ -1,10 +1,12 @@
-## The Most Necessary Mods for World of Tanks
+## Only necessary mods for World of Tanks
 
-* Commanders Camera: allows to zoom out the camera to great heights during the battle.
-* Horizontal Stabilizer: enables horizontal stabilization for all tanks.
+* [Commanders camera](https://github.com/ushmal/wot/blob/master/mods/com.github.ushmal.commanders_camera.wotmod): allows to zoom out the camera to great heights during the battle.
+* [Horizontal stabilizer](https://github.com/ushmal/wot/blob/master/mods/com.github.ushmal.horizontal_stabilizer.wotmod): enables horizontal stabilization for all tanks.
 
-### Additional Mods
+sets duration to 10 sec
 
-* Damage Indicator Duration: sets duration to 10 sec.
-* Sixth Sense Duration: sets duration to for sec.
+### Additional mods
+
+* [Damage indicator](https://github.com/ushmal/wot/blob/master/mods/com.github.ushmal.damage_indicator_duration.wotmod): sets duration to 10 sec.
+* [Sixth sense](https://github.com/ushmal/wot/blob/master/mods/com.github.ushmal.sixth_sense_duration.wotmod): sets duration to 10 sec.
 
