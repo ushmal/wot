@@ -10,4 +10,4 @@
 
 ### How to Install
 
-Just copy [*.wotmod](https://raw.githubusercontent.com/lx1h/wot/master/mods/) to `C:\Games\World_of_Tanks\mods\<version>`.
+Just copy [*.wotmod](https://github.com/lx1h/wot/tree/master/mods/) to `C:\Games\World_of_Tanks\mods\<version>`.
