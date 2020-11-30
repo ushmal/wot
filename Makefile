@@ -2,8 +2,8 @@
 
 .PHONY: all clean
 
+prefix = com.github.lx1h
 moddir = res/scripts/client/gui/mods
-prefix = ushmal
 
 sources = $(wildcard *.py)
 targets = $(sources:.py=.pyc)
