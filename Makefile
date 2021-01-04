@@ -2,7 +2,7 @@
 
 .PHONY: all clean
 
-prefix = com.github.lx1h
+prefix = lx1r
 moddir = res/scripts/client/gui/mods
 
 sources = $(wildcard *.py)
